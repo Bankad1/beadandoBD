@@ -9,7 +9,7 @@ namespace BeadandoBD
     /// <summary>
     /// Számla osztály és adattagjai
     /// </summary>
-    class Szamlak
+    public class Szamlak
     {
         public int Id { get; set; }
         public string Tulajdonos { get; set; }
