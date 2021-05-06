@@ -6,7 +6,48 @@
         xmlns:local="clr-namespace:BeadandoBD"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+
+    <Grid Margin="16,0,8,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="359*" />
+            <ColumnDefinition Width="47*" />
+            <ColumnDefinition Width="362*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="222*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Számla 1" VerticalAlignment="center" HorizontalAlignment="center" Height="16" Margin="2,7,17,7" Width="340"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Számla tulajdonosa" VerticalAlignment="center" Height="16" Margin="0,7,243,7"/>
+        <TextBox x:Name="SzamlaTulajdonosTextbox1" Grid.Column="0" Grid.Row="1" Margin="111,0,25,0" IsReadOnly="true"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Számla egyenlege" VerticalAlignment="center" Height="16" Margin="0,7,243,7"/>
+        <TextBox x:Name="SzamlaEgyenlegeTextbox1" Grid.Column="0" Grid.Row="2" Margin="111,0,25,0" IsReadOnly="true"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" Margin="332,7,9,7" Text="Ft" VerticalAlignment="center" HorizontalAlignment="center" Width="18" Height="16"/>
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Beviteli mező" VerticalAlignment="center" Height="16" Margin="0,9,0,10"/>
+        <TextBox x:Name="BevitelMezoTextbox1" Grid.Column="0" Grid.Row="4" Margin="111,0,25,0" MaxLength="9"/>
+        <TextBlock Grid.Column="0" Grid.Row="4" Margin="332,10,9,9" Text="Ft" VerticalAlignment="center" HorizontalAlignment="center" Width="18" Height="16"/>
+        <Button x:Name="SzamlaFeltoltesButton1" Grid.Column="0" Grid.Row="5" Margin="0,0,293,0" Content="Feltöltés" Click="SzamlaFeltoltesButton1_Click"/>
+        <Button x:Name="UtalasButton1" Grid.Column="0" Grid.Row="5" Margin="91,0,202,0" Content="Utalás" Click="UtalasButton1_Click"/>
+        <Button x:Name="KivetelButton1" Grid.Column="0" Grid.Row="5" Margin="176,0,117,0" Content="Kivét" Click="KivetelButton1_Click"/>
+        <Button x:Name="TulajdonosNevValtasButton1" Grid.Column="0" Grid.Row="5" Margin="253,0,0,0" Content="Tulaj névváltás" Click="TulajdonosNevValtasButton1_Click"/>
+
+        <TextBlock Grid.Column="2" Grid.Row="0" Text="Számla 2" VerticalAlignment="center" HorizontalAlignment="center" Height="16" Margin="10,7,14,7" Width="338"/>
+        <TextBlock Grid.Column="2" Grid.Row="1" Text="Számla tulajdonosa" VerticalAlignment="center" Height="16" Margin="0,7,243,7"/>
+        <TextBox x:Name="SzamlaTulajdonosTextbox2" Grid.Column="2" Grid.Row="1" Margin="111,0,25,0" IsReadOnly="true"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Text="Számla egyenlege" VerticalAlignment="center" Height="16" Margin="0,7,243,7"/>
+        <TextBox x:Name="SzamlaEgyenlegeTextbox2" Grid.Column="2" Grid.Row="2" Margin="111,0,25,0" IsReadOnly="true"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Margin="338,7,6,7" Text="Ft" VerticalAlignment="center" HorizontalAlignment="center" Width="18" Height="16"/>
+        <TextBlock Grid.Column="2" Grid.Row="4" Text="Beviteli mező" VerticalAlignment="center" Height="16" Margin="0,9,0,10"/>
+        <TextBox x:Name="BevitelMezoTextbox2" Grid.Column="2" Grid.Row="4" Margin="111,0,25,0" MaxLength="9"/>
+        <TextBlock Grid.Column="2" Grid.Row="4" Margin="338,10,6,9" Text="Ft" VerticalAlignment="center" HorizontalAlignment="center" Width="18" Height="16"/>
+        <Button x:Name="SzamlaFeltoltesButton2" Grid.Column="2" Grid.Row="5" Margin="0,0,293,0" Content="Feltöltés" Click="SzamlaFeltoltesButton2_Click"/>
+        <Button x:Name="UtalasButton2" Grid.Column="2" Grid.Row="5" Margin="91,0,202,0" Content="Utalás" Click="UtalasButton2_Click"/>
+        <Button x:Name="KivetelButton2" Grid.Column="2" Grid.Row="5" Margin="176,0,117,0" Content="Kivét" Click="KivetelButton2_Click"/>
+        <Button x:Name="TulajdonosNevValtasButton2" Grid.Column="2" Grid.Row="5" Margin="253,0,0,0" Content="Tulaj névváltás" Click="TulajdonosNevValtasButton2_Click"/>
+
     </Grid>
 </Window>
