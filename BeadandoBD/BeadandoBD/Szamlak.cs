@@ -11,11 +11,11 @@ namespace BeadandoBD
     /// </summary>
     public class Szamlak
     {
-        public int Id { get; set; }
-        public string Tulajdonos { get; set; }
-        public int Egyenleg { get; set; }
+        public int Id { get; set; } //Szamla Id
+        public string Tulajdonos { get; set; } // Szamla tulajdonosának a neve
+        public int Egyenleg { get; set; } // Számla egyenlege
 
-        public Szamlak(int id, string tulajdonos, int egyenleg)
+        public Szamlak(int id, string tulajdonos, int egyenleg) //konstruktor
         {
             Id = id;
             Tulajdonos = tulajdonos;

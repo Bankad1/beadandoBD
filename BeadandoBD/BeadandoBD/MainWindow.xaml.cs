@@ -134,22 +134,22 @@ namespace BeadandoBD
             SzamlaEgyenlegeTextbox2.Text = szamla2.Egyenleg.ToString();
         }
 
-        private void SzamlaFeltoltesButton1_Click(object sender, RoutedEventArgs e)
+        private void SzamlaFeltoltesButton1_Click(object sender, RoutedEventArgs e) //Feltöltés gomb 
         {
             SzamlaFeltoltes(szamla1, BevitelMezoTextbox1.Text);
         }
 
-        private void UtalasButton1_Click(object sender, RoutedEventArgs e)
+        private void UtalasButton1_Click(object sender, RoutedEventArgs e) //Utalás gomb
         {
             SzamlaUtalas(szamla1, szamla2, BevitelMezoTextbox1.Text);
         }
 
-        private void KivetelButton1_Click(object sender, RoutedEventArgs e)
+        private void KivetelButton1_Click(object sender, RoutedEventArgs e) //Kivétel gomb
         {
             SzamlaKivetel(szamla1, BevitelMezoTextbox1.Text);
         }
 
-        private void TulajdonosNevValtasButton1_Click(object sender, RoutedEventArgs e)
+        private void TulajdonosNevValtasButton1_Click(object sender, RoutedEventArgs e) //Tulajdonos névváltásának gomb
         {
             TulajNevValtas(szamla1, BevitelMezoTextbox1.Text);
         }
